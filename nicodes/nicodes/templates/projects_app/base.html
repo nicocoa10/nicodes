@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nicolas Ojeda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'js/main.js' %}">
+
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-8">
+        {% block body_block %}
+        <!-- Everything outside this block will be inherited if you extend in another page -->
+
+      {% endblock %}
+    </div>
+    <div class="col-2">
+    </div>
+  </div>
+      <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

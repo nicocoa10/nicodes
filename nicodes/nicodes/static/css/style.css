@@ -1,0 +1,61 @@
+
+body {
+padding-top: 1rem;
+font-family: Hack, monospace;
+background-color : #483E5B;
+}
+
+.username {
+    color : #00FF00
+}
+
+.directory {
+    color: #43939F;
+}
+
+.typed-text {
+    color: #FFFFFF;
+}
+
+.links {
+    color: #FFFFFF;
+}
+.cursor {
+
+display : inline-block;
+width : 3px;
+background-color : #FFFFFF;
+margin-left : .1rem;
+animation : blink 1s infinite;
+}
+
+.cursor.typing{
+animation:none;
+
+}
+@keyframes blink {
+0% {background-color: #FFFFFF;}
+50% {background-color: transparent;}
+100% {background-color: #FFFFFF;}
+}
+
+.changelog {
+    color: #FFFFFF;
+
+}
+
+.projects {
+    color: #FFFFFF;
+
+}
+
+th {
+    color: white;
+}
+td {
+    color: white;
+}
+
+
+
+
